@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- gsDis_type.html 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        gsDis_type.html
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css">
+</head>
+<body>
+	<h1>
+		Use GES43_P2P Database
+					<br><br>
+	<button Type="button"  onclick="window.location.href='gsIndex.html'">Go Back to Report Search Index</button>
+	</h1>
+	<br>
+	<hr>
+
+	<form id="form2" action="" method="post">
+	<p> Get a list of UniprotKB entries that link to Disease Ontology entries by entering a disease type:
+	<input type="text" placeholder="Enter disease type" name="distype">
+	</p>
+	
+	<br>
+	<input type="submit" name="submit2" class="submit" value="Go" />
+	</form>
+	<hr>
+	<br>
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table1">
+	<!--table-->
+		<caption>
+			These UniprotKB entries here link to DO Diseases of the type "autosomal"
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> UniprotKB ID</th>
+			<th> Targeted Disease</th>
+			<th> DO Disease Name </th>
+			<th> Disease Relationship Type </th>
+		</tr>
+		<tr>
+			<td> Q96EV8 </td>
+			<td> Schizophrenia </td>
+			<td> Hermansky-Pudlak syndrome </td>
+			<td> is_a autosomal recessive disease </td>
+		
+		</tr>
+		<tr>
+			<td> P16422 </td>
+			<td> Colon Cancer </td>
+			<td> Lynch Syndrome </td>
+			<td> is_a autosomal recessive disease </td>
+		</tr>
+	</table>
+
+</body>

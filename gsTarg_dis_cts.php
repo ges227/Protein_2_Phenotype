@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- gsTarg_dis_cts.php 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        gsTarg_dis_cts.php
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css">
+</head>
+<body>
+	<h1>
+		Use GES43_P2P Database
+					<br><br>
+	<button Type="button"  onclick="window.location.href='gsIndex.php'">Go Back to Report Search Index</button>
+	</h1>
+	<br>
+	<hr>
+
+	<form id="form2" action="" method="post">
+	<p style="text-align:center"> Get a summary of number of proteins and number of MIM records acquired for each disease: </P>
+	<br>
+	<center><input type="submit" name="submit2" class="submit" value="Go" /></center>
+	</form>
+	<hr>
+	<br>
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table3" >
+	<!--table-->
+		<caption>
+			These entries have multiple protein synonyms, separated by a comma
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> Targeted Disease Name</th>
+			<th> Total Proteins </th>
+			<th> Total MIM's </th>
+			<th> UniprotKB ID's </th>
+		</tr>
+		<tr>
+			<td> colon cancer </td>
+			<td> 3 </td>
+			<td> 9 </td>
+			<td> P16422; P31749; P84996</td>
+		</tr>
+		<tr>
+			<td> Schizophrenia </td>
+			<td> 10 </td>
+			<td> 13</td>
+			<td> O43272; P16615; P43005; P49798; P51531; Q96EV8; Q9BYB0; Q9H0Q3; Q9NRI5; Q9Y2M0</td>
+		</tr>
+	</table>
+
+</body>

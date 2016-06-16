@@ -1,0 +1,181 @@
+/* StyleSheets.css
+This is a comment. Comments are not displayed in the browser
+References: 
+Color codes: http://html-color-codes.info/
+Table: http://www.w3schools.com/css/css_table.asp
+Units: http://www.w3.org/Style/Examples/007/units.en.html
+
+
+*/
+
+/* reset margins; image will aligned with the baseline of text if in-line */
+html, body, div, span, h2, h3, h4, h5, h6, p, ol, ul, li,
+pre, form, label, table, caption, tbody, tfoot, thead,tr, th, td, footer, header {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* setup body color
+http://www.w3schools.com/tags/ref_colorpicker.asp
+#CEE3F6 - light blue
+#def - means #ddeeff; lighter blue than #CEE3F6
+#eee - light grey;
+#D3F3D9 - green
+#E1D690 - yellow
+#E1C304- olive
+*/
+body{
+    background-color: #A9F5BC;
+	margin-right:200px;
+}
+body.homeP{
+	background-color: #FA8258;
+    /*background-image:url("StaticWebsite/images/personal.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;*/
+    
+
+}
+
+body, p, input, select{
+    line-height: 1.2;
+    font-family: Times;
+    font-size: 16pt;
+}
+
+/* reasonable starting margins; 
+5em - 5 characters;
+.5ex - .5 lower case letter; 
+pt - point of a font
+
+*/
+h2, h3, h4, h5, h6, ol, ul, li { margin: 6pt 12pt; }
+p { margin: 1ex 12pt; }
+
+li { margin-left: 2em; }
+li.home {
+    padding: 5px;
+    border: 2px solid black;
+    vertical-align: auto;
+	background-color: #A9F5BC;/*3B170B*/
+    color: white;
+    display:inline-block;
+    border-radius: 10%;
+    margin-right: 
+}
+div.webdocs{
+	display:block;
+}
+/*div.noth1{
+	margin-right:200px;
+	width:50%
+	display:inline-block;
+
+}*/
+
+li.webdocs {
+	padding: 5px;
+    border: 2px solid black;
+    vertical-align: auto;
+	background-color: #fba383;/*3B170B*/
+    color: red;
+    display:inline-block;
+    border-radius: 10%;
+    margin: 10px 30% 
+}
+li a {
+    text-decoration: none;
+}
+/* setup headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+	text-align:center;
+	font-size: 150%; }
+
+h2 { font-size: 110%; }
+h3 { font-size: 100%; }
+h4 { font-size: 100%; }
+h5 { font-size: 100%; }
+h6 { font-size: 100%; }
+
+/* setup pre */
+pre { font-family: consolas, monospace; }
+span.extext{ font-size:80%; color:grey;}
+textarea {
+    width: 300px;
+    height: 150px;
+    font-size: 16pt;
+}
+
+/* report style 
+*/
+
+/*
+Create a few different table styles using classes
+table.table1 {...}
+table.table1 tr {...}
+table.table1 td {...}
+
+table.table2 {...}
+table.table2 tr {...}
+table.table2 td {...}
+*/
+
+/* table1 class */
+table.table1 { 
+	border-collapse: collapse;
+    width: 95%;
+    margin-left: auto;
+} /*collapse or  separate*/
+table.table1 td{ border: 1px solid black; }
+table.table1 th{ border: 1px solid black; }
+table.table1 th {background-color: #E1C304; /*padding: 10px 3px;*/}
+table.table1 td { /*padding: 0px 3px;*/ }
+
+
+/* alternate row color
+the table below has a light gray background for the even rows and white for the odd ones.
+*/
+table.table1 tr:nth-child(even) {background: #CCC}
+table.table1 tr:nth-child(odd) {background: #FFF}		  
+
+table.table1 tfoot td {
+	text-align: center;
+	font-size: 75%;
+	} 
+	
+/* table2 */
+table.table2 { border-collapse: collapse; }
+table.table2 th { border: 1px solid black; }
+table.table2 td { border: 1px solid black; }
+table.table2 th, td { padding: 0 3px; }
+table.table2 tfoot td {
+					background-color: #eee;
+					text-align: center;
+					font-size: 75%;
+					}
+
+/* table3 */
+table.table3 { border-collapse: collapse; } /*collapse or  separate*/
+table.table3 th, td { border: 4px solid black; }
+table.table3 th {background-color: #E1C304; padding: 10px 3px;}
+table.table3 td { padding: 0px 3px; }
+
+/*alternate column color
+The following rules give the first column a yellow background, and then every other column starting from column 3 a gray one:
+*/
+table.table3 td:first-child {background: #FF0}
+table.table3 td:nth-child(2) {background: #CCC}
+table.table3 td:nth-child(3) {background: #E0F8E6}
+
+
+
+
+

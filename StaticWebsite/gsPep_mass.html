@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- gsPep_mass.html 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        gsPep_mass.html
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css">
+</head>
+<body>
+	<h1>
+		Use GES43_P2P Database
+					<br><br>
+	<button Type="button"  onclick="window.location.href='gsIndex.html'">Go Back to Report Search Index</button>
+	</h1>
+	<br>
+	<hr>
+
+	<form id="form2" action="" method="post">
+	<p> Get a list of of proteins by entering a minimum and a maximum protein mass:
+	<input type="text" placeholder="Min mass" name="minmass">
+	<input type="text" placeholder="Max mass" name="maxmass">
+	</p>
+	
+	<br>
+	<input type="submit" name="submit2" class="submit" value="Go" />
+	</form>
+	<hr>
+	<br>
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table2">
+	<!--table-->
+		<caption>
+			The proteins here have a peptide mass between 10000 and 20000 Da
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> Targeted Disease</th>
+			<th> UniprotKB ID</th>
+			<th> Protein Name </th>
+			<th> Protein Mass (da) </th>
+		</tr>
+		<tr>
+			<td> Malaria </td>
+			<td> P02724 </td>
+			<td> Glycophorin-A </td>
+			<td> 16331</td>
+			
+		</tr>
+		<tr>
+			<td> Schizophrenia </td>
+			<td> Q9H0Q3 </td>
+			<td> FXYD domain-containing ion transport regulator 6 </td>
+			<td> 10542 </td>
+		</tr>
+	</table>
+
+</body>

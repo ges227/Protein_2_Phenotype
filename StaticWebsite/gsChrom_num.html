@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- gsChrom_num.html 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        gsChrom_num.html
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css">
+</head>
+<body>
+	<h1>
+		Use GES43_P2P Database
+					<br><br>
+	<button Type="button"  onclick="window.location.href='gsIndex.html'">Go Back to Report Search Index</button>
+	</h1>
+	<br>
+	<hr>
+
+	<form id="form2" action="" method="post">
+	<p> Get a list of of proteins encoded by genes on the entered chromosome number:
+	<input type="text" placeholder="Enter chromosome number" name="chromnum" size=25>
+	</p>
+	
+	<br>
+	<input type="submit" name="submit2" class="submit" value="Go" />
+	</form>
+	<hr>
+	<br>
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table1">
+	<!--table-->
+		<caption>
+			These proteins here are encoded by genes located on chromosome number "9"
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> HGNC ID</th>
+			<th> Approved Symbol</th>
+			<th> Approved Protein Name </th>
+			<th> Chromosome Position </th>
+			<th> HGNC Link </th>
+			<th> UniprotKB ID </th>
+			<th> Protein Name </th>
+		</tr>
+		<tr>
+			<td> 10939 </td>
+			<td> SLC1A1 </td>
+			<td> solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter; system Xag); member 1 </td>
+			<td> 9p24</td>
+			<td> <a href="http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:10939" target="_blank"><b>10939</b></a></td>
+			<td> P43005</td>
+			<td> Excitatory amino acid transporter 3</td>
+		</tr>
+		<tr>
+			<td> 11098 </td>
+			<td> SMARCA2 </td>
+			<td> SWI/SNF related; matrix associated; actin dependent regulator of chromatin; subfamily a; member 2</td>
+			<td> 9p24.3</td>
+			<td> <a href="http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:11098" target="_blank"><b>11098</b></a> </td>
+			<td> P51531 </td>
+			<td> Probable global transcription activator SNF2L2 </td>
+		</tr>
+	</table>
+
+</body>
